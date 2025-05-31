@@ -5,13 +5,173 @@
 */
 
 @media (min-width: 1024px) {
-  /* .top-navigation .trigram {
+  .top-navigation .trigram {
     display: none;
-  } */
+  }
 
   /* 👇👇👇 Add the styles that belong to the DESKTOP view only beneath 👇👇👇 */
+
+  .top-navigation li a:hover {
+    color: black;
+  }
+
+  .phones a:hover,
+  .email a:hover {
+    color: white;
+  }
+
+  .teammate-social-icons .facebook:hover,
+  .teammate-social-icons .twitter:hover,
+  .teammate-social-icons .linkedin:hover {
+    background-color: gray;
+  }
+
+  .twitter:hover .icon,
+  .facebook:hover .icon,
+  .instagram:hover .icon,
+  .linked-in:hover .icon {
+    background-color: white;
+  }
+
+  .twitter:hover span,
+  .facebook:hover span,
+  .instagram:hover span,
+  .linked-in:hover span {
+    color: white;
+  }
 }
 
 /* 👇👇👇 Add the media rule and the styles that are common within the TABLET and MOBILE views beneath 👇👇👇 */
 
+@media (max-width: 1023px) {
+  .top-navigation ul {
+    display: none;
+  }
+
+  .portfolio-list {
+    flex-direction: column;
+  }
+
+  .portfolio-item {
+    flex-direction: row;
+  }
+
+  .teammates-list-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .teammates-list:before,
+  .teammates-list:after {
+    display: none;
+  }
+
+  .teammate-img-wrapper {
+    width: 40vw;
+  }
+
+  .teammate-data,
+  .teammate-info {
+    align-items: center;
+  }
+
+  .teammate-social-icons .facebook,
+  .teammate-social-icons .twitter,
+  .teammate-social-icons .linkedin {
+    background-color: gray;
+  }
+
+  .footer-contacts {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px;
+    gap: 24px;
+  }
+
+  .phones ul li a,
+  .email ul li a {
+    color: white;
+  }
+
+  .footer-contacts div {
+    width: 339px;
+    align-items: center;
+  }
+
+  .address p {
+    width: 182px;
+  }
+
+  .social-icons span {
+    display: none;
+  }
+
+  .social-icons div .icon {
+    background-color: white;
+  }
+
+  .social-icons {
+    width: 210px;
+  }
+}
+
 /* 👇👇👇 Add the media rule and the styles that belong to the MOBILE view only beneath 👇👇👇 */
+
+@media (max-width: 767px) {
+  .portfolio-item {
+    flex-direction: column;
+  }
+
+  .teammates-content .section-info .subtext {
+    width: 100%;
+  }
+
+  .portfolio-item-info {
+    align-items: center;
+  }
+
+  .item-description {
+    text-align: center;
+  }
+
+  .teammates-list {
+    flex-direction: column;
+  }
+
+  .teammate {
+    flex-direction: row;
+    border: 1px solid #969696;
+    width: 100%;
+    padding: 16px;
+    gap: 16px;
+  }
+
+  .teammate-data {
+    justify-content: center;
+    gap: 24px;
+    align-items: flex-start;
+  }
+
+  .teammate-info {
+    align-items: flex-start;
+  }
+
+  .teammate-social-icons {
+    gap: 16px;
+  }
+
+  .social-icons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-icons span {
+    display: block;
+    color: white;
+  }
+
+  .footer-contacts {
+    flex-direction: column;
+    align-items: center;
+  }
+}
