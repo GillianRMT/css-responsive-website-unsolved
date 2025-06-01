@@ -18,6 +18,7 @@
   .phones a:hover,
   .email a:hover {
     color: white;
+    text-decoration: underline;
   }
 
   .teammate-social-icons .facebook:hover,
@@ -120,6 +121,10 @@
 @media (max-width: 767px) {
   .portfolio-item {
     flex-direction: column;
+  }
+
+  .portfolio-content {
+    width: 100%;
   }
 
   .teammates-content .section-info .subtext {
